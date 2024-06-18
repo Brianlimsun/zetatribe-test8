@@ -1,0 +1,353 @@
+/* Reset styles (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    -webkit-tap-highlight-color: transparent;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #DDDDDD;
+}
+
+.nav{
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;  
+    font-size: 1.2vw;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo2{
+    font-weight: bold;
+    color: #dc4293;
+    size: 50vw;
+    padding-left: 20px;
+}
+
+.contact:hover{
+    transform: scale(1.05);
+    background-color: #db509a;
+    transition: 200ms ease;
+}
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.home:hover{
+    color: #dc4293;
+    transition: 200ms ease;
+}
+.services:hover{
+    color: #dc4293;
+    transition: 200ms ease;
+}
+.about:hover{
+    color: #dc4293;
+    transition: 200ms ease;
+}
+.testimonials:hover{
+    color: #dc4293;
+    transition: 200ms ease;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.contact{
+    color: white;
+    padding: 10px 15px;
+    background-color: #dc4293;
+    border-radius: 10px;
+}
+.processing{
+    display: flex;
+    height: 50vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    font-weight: bold;
+    color: #dc4293;
+
+}
+  
+.nav img{
+    height: 3vw;
+}
+.selected{
+    background-color: #dc4293;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.hero{
+    padding-left: 8vw;
+    padding-top: 6vw;
+    height: 55vw;
+    
+}
+.hero1{
+    font-family:"Playwrite IN";
+    font-size: 6vw;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 70vw;
+}
+.hero1Span{
+    font-family:"Playwrite IN";
+    color: #dc4293;
+    
+}
+.hero2{
+  width: 50vw;
+  padding-top: 5vw;
+  line-height: 1;
+  transform: translate(0vw,-40vw);
+}
+.hero2Text{
+    font-weight: bold;
+    font-size: 4vw;
+    padding-bottom: 20px;
+}
+.hero2Span{
+    color: #dc4293;
+}
+.hero2SpanText{
+    font-size: 7vw;
+    text-decoration:underline;
+    text-decoration-thickness: 5px;
+
+}
+.started{
+    border: none;
+    background-color: #dc4293;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.started:hover{
+    transform: scale(1.05);
+    background-color: #db509a;
+    transition: 200ms ease;
+}
+.circle{
+    position: absolute;
+    transform: translate(52.8vw,-47.8vw);
+    height: 30vw;
+    width: 30vw;
+    background-color: #dc4293;
+    border-radius: 50%;
+    z-index: -1;
+}
+.hero img{
+    height: 40vw;
+    transform: translate(48vw,-17vw);
+    z-index: 1;  
+}
+
+
+.page2{
+    background-color: #dc4293;
+    height: 1000px;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    border-radius: 8vw;
+    padding-top: 70px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+.menu{
+    display: none;
+}
+.pagesSmallScreen{
+    display: none;
+}
+    /* Add styles for the About Us section */
+
+  
+  /* Footer styles */
+  footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media queries for responsiveness (adjust breakpoints as needed) */
+  @media(max-width:768px){
+    .pages{
+        display:none;
+    }
+    .menu{
+        display: flex;
+    }
+    .pagesSmallScreen{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 70%;
+        top: 0;
+        left: -70%;
+        height: 100%;
+        gap: 10px;
+        z-index: 1;
+        padding: 15px;
+        background-color: #EEEEEE;
+        transition: transform 0.3s ease;
+        border-radius: 0px 20px 20px 0px;
+    } 
+    .nav{
+        height: 100px;
+        padding: 20px 10px;
+    }
+    .nav img{
+        height: 8vw;
+    }
+    
+    .logo1{
+        height: 10vw;
+    }
+    .logo2{
+        padding-left: 10px;
+    }
+    .logo img{
+        height:7vw;
+    }
+
+    .logoSmall{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+    
+    }
+    .pagesSmallScreen h4{
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .closeContainer{
+        padding: 10px;
+        height: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent ;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
+        border-radius: 50%;
+    
+    }
+    .closeContainer:hover{
+        background-color: #e2e1e1;
+        
+        
+        
+    }
+    .close{
+        width: 3vw;
+        align-self:center;
+         
+    }
+    .contact{
+        font-size: 2.4vw;
+    }
+    .home:hover{
+        color: #dc4293;
+        transition: 200ms ease;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .services:hover{
+        color: #dc4293;
+        transition: 200ms ease;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .about:hover{
+        color: #dc4293;
+        transition: 200ms ease;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .testimonials:hover{
+        color: #dc4293;
+        transition: 200ms ease;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150vw;
+    }
+    .hero1{
+        width: 100%;
+        margin-bottom: 200px;
+        font-size: 10vw;
+        text-align: center;
+    }
+    .hero img{
+        height: 70vw;
+        transform: translate(0vw,15vw);
+    }
+    .circle{
+        transform: translate(4.5vw,-46.6vw);
+        height: 60vw;
+        width: 60vw;
+    }
+    .hero2{
+        width: 100%;
+        position: absolute;
+        transform: translate(-3vw,95vw);
+        text-align: center;
+    }
+    .hero2Text{
+        font-size: 8vw;
+    }
+    .hero2SpanText{
+        font-size: 11vw;
+    }
+    .picture{
+        position: absolute;
+        transform: translate(-2vw,10vw);
+    }
+    .menu:hover{
+        background-color: #FAFAFA;
+        border-radius: 10px;
+    }
+    .started{
+        font-size: 5vw;
+    }
+    .processing{
+        height: 100vw;
+    }
+    
+  }
